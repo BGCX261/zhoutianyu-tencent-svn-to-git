@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+
+	<!-- handler begin -->
+	<bean id="ReqGetUserInfoHandler" class="com.cyou.wg.sns.relayserver.socketSvr.handler.ReqGetUserInfoHandler"/>
+	<bean id="ReqPlayGameHandler" class="com.cyou.wg.sns.relayserver.socketSvr.handler.ReqPlayGameHandler"/>
+	<!-- handler end -->		
+
+</beans>

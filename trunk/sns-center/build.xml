@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<project name="Tencent" basedir=".">
+	<target name="package_center-core">
+    	<delete file="lib/sns-center-core.jar"/>
+    	<jar jarfile="lib/sns-center-core.jar" update="yes">
+    		<fileset dir="bin">
+    		    <include name="com/cyou/wg/sns/ctsvr/core/**"/>
+    		</fileset>
+    	</jar>
+		
+    	<delete file="lib/sns-center-app.jar"/>
+    	<jar jarfile="lib/sns-center-app.jar" update="yes">
+    		<fileset dir="bin">
+    		    <include name="com/cyou/wg/sns/ctsvr/app/**"/>
+    		</fileset>
+    	</jar>
+
+    	<delete file="lib/sns-center-startboot.jar"/>
+    	<jar jarfile="lib/sns-center-startboot.jar" update="yes">
+        	<fileset dir="bin">
+    	   	    <include name="com/cyou/wg/sns/ctsvr/startboot/**"/>
+    	   	</fileset>
+    	</jar>
+    	
+    </target>
+</project>

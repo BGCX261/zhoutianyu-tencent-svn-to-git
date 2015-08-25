@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<conf>
+	<app appid="123" appkey="456" url="http://10.6.45.219:8080/TN.jsp" comments="TN"/>
+</conf>

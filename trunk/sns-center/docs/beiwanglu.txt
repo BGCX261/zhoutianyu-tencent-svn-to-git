@@ -1,0 +1,21 @@
+因为要用自己写的classloader进行类加载操作，代码中只将jar包得路径传进去了，所以用IDE时，并不是通过bin中类进行加载。所以用ant脚本：
+<target name="package_center-core">
+     <delete file="lib/sns-center-core.jar"/>
+     <jar jarfile="lib/sns-center-core.jar" update="yes">
+     <fileset dir="bin">
+         <include name="com/cyou/wg/sns/ctsvr/core/**"/>
+     </fileset>
+     </jar>
+     <delete file="lib/sns-center-app.jar"/>
+     <jar jarfile="lib/sns-center-app.jar" update="yes">
+     <fileset dir="bin">
+         <include name="com/cyou/wg/sns/ctsvr/app/**"/>
+     </fileset>
+     </jar>
+
+     <delete file="lib/sns-center-startboot.jar"/>
+     <jar jarfile="lib/sns-center-startboot.jar" update="yes">
+         <fileset dir="bin">
+             <include name="com/cyou/wg/sns/ctsvr/startboot/**"/>
+         </fileset>
+     </jar>

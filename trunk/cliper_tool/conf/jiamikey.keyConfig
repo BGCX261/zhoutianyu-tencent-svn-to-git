@@ -1,0 +1,14 @@
+#key文件生成位置
+keyFileDir=./
+#key文件数量
+keyFileCount=1
+#每个key包含key值数量
+keyFileKeyCount=20
+#key文件存储memcached的URL
+keyFileMemcachedURL=127.0.0.1
+#key文件存储memcached的端口
+keyFileMemcachedPort=40000
+#要加密的文件位置
+#srcFileDir=d:/test/webroot/WEB-INF/classes
+#要加密解密的多个jar文件位置，用","隔开，注意是英文的","
+loadJarDir=Tencent.jar

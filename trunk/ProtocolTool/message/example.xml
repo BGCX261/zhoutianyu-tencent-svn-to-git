@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+	<sendMessage id="30" name="gameLoginCodeSend"
+		comment="请求验证游戏,登录流程第一步">
+		<attribute name="accID" type="String" comment="用户平台ID" />
+	</sendMessage>
+	
+	<sendMessage id="101" name="userChatSend"
+		comment="玩家聊天协议">
+		<attribute name="message" type="String" comment="聊天内容" />
+		<attribute name="toUserID" type="String" comment="发送玩家的ID" />
+	</sendMessage>
+	
+	<backMessage id="60" name="userChatMessageBack"
+		comment="发送玩家聊天消息">
+		<list name="chatMessageList" type="NetChatMessageVO" comment="玩家聊天消息列表">
+			<attribute name="message" type="String" comment="消息内容"/>
+		</list>
+	</backMessage>
+	
+	<sendMessage id="102" name="globalChatSend"
+		comment="全服广播协议">
+		<attribute name="message" type="String" comment="聊天内容" />
+	</sendMessage>
+</root>

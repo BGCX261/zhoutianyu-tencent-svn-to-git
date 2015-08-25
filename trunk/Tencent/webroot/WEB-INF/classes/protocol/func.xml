@@ -1,0 +1,18 @@
+<root>
+	<sendMessage id="5002" type="S_PL_RESP_PLAYGAME" name="reqPlayGame" comment="返回应用安装结果">
+			<attribute type="byte" name="ret" comment="返回请求结果"/>
+	</sendMessage>
+	
+	<backMessage id="6002" type="PL_S_REQ_PLAYGAME" name="respPlayGame" comment="玩家开始玩游戏">
+		<attribute type="String" name="openID" length="32" comment="ID"/>
+		<attribute type="String" name="openKey" length="32" comment="sessioon key"/>
+		<attribute type="String" name="pf" length="32" comment="pf值来识别应用的来源平台"/>
+		<attribute type="String" name="pfkey" length="32" comment="pf值来识别应用的来源平台"/>
+	</backMessage>
+	
+	<sendMessage id="5001" type="S_PL_RESP_PLAYGAME" name="reqGetUserInfo" comment="返回玩家信息">
+		<attribute type="String" name="openID" length="32" comment="ID"/>
+		<attribute type="String" name="openKey" length="32" comment="sessioon key"/>
+		<attribute type="String" name="pf" length="32" comment="pf值来识别应用的来源平台"/>
+	</sendMessage>
+</root>
